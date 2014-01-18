@@ -1,0 +1,32 @@
+{
+  "name": "ui-swipe-events",
+  "version": "0.0.0",
+  "description": "swipe gestoure detection utility library",
+  "readme": "readme.md",
+  "main": "grunt",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://githubrepo"
+  },
+  "keywords": [
+    "mobile",
+    "touch",
+    "mouse",
+    "swipe",
+    "event",
+    "gestoure"
+  ],
+  "author": "Marco Pegoraro (jQbrick)",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-uglify": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}

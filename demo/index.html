@@ -1,0 +1,49 @@
+<!DOCTYPE HTML> 
+<html>
+    <head>
+    <title>SwipeEvents | DEMO</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=8">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
+        
+        <!-- DEMO -->
+        <style>
+        #test01 {
+            width: 280px;
+            height: 350px;
+            margin: 10px;
+            border:1px solid black;
+            text-align:center;
+        }
+        #test01 p {
+            margin: 100px 20px;
+            font-family:sans-serif;
+            font-size:9pt;
+        }
+        </style>
+        
+    </head>
+    <body>
+        
+        <div id="test01" class="swipe-stack">
+            <p>use your mouse or your finger to do a swipe action on this box!</p>
+        </div>
+        
+        
+        <!-- SwipeEvents -->
+        <script src="../build/swipe-events.js"></script>
+        
+        <!-- DEMO -->
+        <script>
+        addSwipeEvents('test01');
+        
+        document.getElementById('test01').addEventListener('swipestart', function(e) {
+            document.getElementById('test01').innerHTML = '<p>you just start swiping: <b>' + e.direction.toUpperCase() + '</b></p>';
+        });
+        
+        document.getElementById('test01').addEventListener('swipe', function(e) {
+            document.getElementById('test01').innerHTML = '<p>you swiped: <b>' + e.direction.toUpperCase() + '</b></p>';
+        });
+        </script>
+        
+    </body>
+</html>
