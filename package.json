@@ -1,6 +1,6 @@
 {
   "name": "ui-swipe-events",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "swipe gestoure detection utility library",
   "readme": "readme.md",
   "main": "grunt",
